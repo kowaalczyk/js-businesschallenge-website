@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html ng-app="Hsbc" lang="pl">
+<head>
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-57743217-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+
+  <meta name="author" value="Krzysztof Kowalczyk">
+  <title>High School Business Challenge</title>
+  <link rel="icon" href="img/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1, user-scalable=no">
+  <meta charset="utf-8">
+
+  <!-- Angular Material style sheet -->
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+  <!-- Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic">
+
+  <!-- Custom Styleshhet -->
+  <link rel="stylesheet" href="css/hsbc.css">
+</head>
+<body layout="column" ng-controller="MainController as MainCtrl" ng-cloak id="HsbcDialogContainer">
+  <div class="hsbc-all-container" md-colors="{background: 'default-background-300'}">
+    <section>
+      <md-toolbar class="md-menu-toolbar md-medium-tall md-whiteframe-1dp" hide-xs hide-sm show-gt-sm ng-cloak>
+        <!-- TODO: Implement background-color change for toolbar like the one on:
+                  https://design.google.com/resources/
+                  -->
+        <div layout="row" layout-fill>
+          <div layout layout-align="center center" class="hsbc-main-menu-logo" flex="10">
+            <!-- TODO: Swap with vector, lightgray HSBC logo -->
+            <img src="img/hsbc-logo.png">
+          </div>
+          <div layout="column" layout-align="end start">
+            <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="nawigacja">
+              <md-nav-item md-nav-href="#/" href="#/" name="index" >
+                Bieżąca edycja
+              </md-nav-item>
+              <md-menu>
+                <md-nav-item ng-click="$mdOpenMenu($event)" md-nav-click="" name="prev">
+                  Poprzednie edycje
+                </md-nav-item>
+
+                <md-menu-content width="3">
+                  <md-menu-item>
+                    <md-button ng-click="" href="#/edycje/1" name="ed1">
+                      I Edycja
+                    </md-button>
+                  </md-menu-item>
+                  <md-menu-item>
+                    <md-button ng-click="" href="#/edycje/2" name="ed2">
+                      II Edycja
+                    </md-button>
+                  </md-menu-item>
+                </md-menu-content>
+              </md-menu>
+              <md-nav-item md-nav-href="#/zadania" href="#/zadania" name="cases">
+                Zadania i materiały
+              </md-nav-item>
+              <md-nav-item md-nav-href="#/zwyciezcy" href="#/zwyciezcy" name="winners">
+                Zwycięzcy
+              </md-nav-item>
+              <md-nav-item md-nav-href="#/partnerzy" href="#/partnerzy" name="partners">
+                Partnerzy
+              </md-nav-item>
+              <md-nav-item md-nav-href="#/organizatorzy" href="#/organizatorzy" name="org">
+                Organizatorzy
+              </md-nav-item>
+              <md-nav-item md-nav-href="#/kontakt" href="#/kontakt" name="contact">
+                Kontakt
+              </md-nav-item>
+            </md-nav-bar>
+          </div>
+        </div>
+      </md-toolbar>
+      <md-toolbar layout="row" show-xs show-sm hide-gt-sm ng-cloak>
+        <div class="md-toolbar-tools">
+          <md-button class="md-icon-button" aria-label="Settings" ng-click="openLeftMenu()">
+            <i class="material-icons">menu</i>
+          </md-button>
+          <h1>
+            <span>High School Business Challenge</span>
+          </h1>
+      </md-toolbar>
+    </section>
+    <section md-colors="{background: 'default-background-300'}">
+      <div layout-align="center start" layout="row" md-colors="{background: 'default-background-200'}">
+        <div class="hsbc-view-filler" hide show-gt-md flex>
+          <!-- Probably not necessary, but who cares? -->
+        </div>
+        <div class="ng-view hsbc-view-container" ng-cloak flex flex-gt-md="80" flex-gt-lg="70">
+
+        </div>
+        <div class="hsbc-view-filler" hide show-gt-md flex>
+          <!-- Probably not necessary, but who cares? -->
+        </div>
+      </div>
+      <footer md-colors="{background: 'default-background-300'}">
+        <md-divider></md-divider>
+        <p class="md-caption">
+            © <a href="http://www.sknbiznes.pl/" target="_blank" style="color: inherit; text-decoration: none;">SKN Biznesu</a> | Projekt i wykonanie strony: <a href="mailto:k.kowaalczyk@gmail.com" style="color: inherit; text-decoration: none;">Krzysztof Kowalczyk</a>
+        </p>
+        <p class="md-caption">
+          <a href="" ng-click="showConfirm()">Uzywamy plików cookies</a>
+        </p>
+      </footer>
+    </section>
+    <md-sidenav md-component-id="left" class="md-sidenav-left md-whiteframe-1dp">
+      <md-list>
+        <md-list-item
+                class=""
+                ng-click="openLeftMenu()"
+                ng-href="#/">
+          Bieżąca edycja
+        </md-list-item>
+        <md-list-item class="">
+          <md-menu>
+            <div class="md-list-item-text" ng-click="$mdOpenMenu($event)">
+              Poprzednie edycje
+            </div>
+            <md-menu-content width="5">
+              <md-menu-item>
+                <md-button ng-click="openLeftMenu()" href="#/edycje/1" name="ed1">
+                  I Edycja
+                </md-button>
+              </md-menu-item>
+              <md-menu-item>
+                <md-button ng-click="openLeftMenu()" href="#/edycje/2" name="ed2">
+                  II Edycja
+                </md-button>
+              </md-menu-item>
+            </md-menu-content>
+          </md-menu>
+        </md-list-item>
+        <md-list-item
+                class=""
+                ng-click="openLeftMenu()"
+                ng-href="#/zadania">
+          Zadania i materiały
+        </md-list-item>
+        <md-list-item
+                class=""
+                ng-click="openLeftMenu()"
+                ng-href="#/zwyciezcy">
+          Zwycięzcy
+        </md-list-item>
+        <md-list-item
+                class=""
+                ng-click="openLeftMenu()"
+                ng-href="#/organizatorzy">
+          Organizatorzy
+        </md-list-item>
+        <md-list-item
+                class=""
+                ng-click="openLeftMenu()"
+                ng-href="#/partnerzy">
+          Partnerzy
+        </md-list-item>
+        <md-list-item
+                class=""
+                ng-click="openLeftMenu()"
+                ng-href="#/kontakt">
+          Kontakt
+        </md-list-item>
+      </md-list>
+    </md-sidenav>
+  </div>
+
+  <!-- Angular Material requires Angular.js Libraries -->
+  <script src="./bower_components/angular/angular.min.js"></script>
+  <script src="./bower_components/angular-animate/angular-animate.min.js"></script>
+  <script src="./bower_components/angular-aria/angular-aria.min.js"></script>
+  <script src="./bower_components/angular-messages/angular-messages.min.js"></script>
+  <!-- Other dependencies -->
+  <script src="./bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="./bower_components/angular-route/angular-route.js"></script>
+  <!-- Angular Material Library -->
+  <script src="./bower_components/angular-material/angular-material.min.js"></script>
+
+  <!-- Main application and controllers -->
+  <script src="/app.js"></script>
+  <script src="/themes.js"></script>
+  <script src="/controllers/edition.js"></script>
+  <script src="/controllers/contact.js"></script>
+  <script src="/controllers/org.js"></script>
+  <script src="/controllers/case.js"></script>
+  <script src="/controllers/winner.js"></script>
+</body>
+</html>
+
+<!--
+
+Designed and created by:
+Krzysztof Kowalczyk
+-
+k.kowaalczyk@gmail.com
+linkedin.com/in/kowaalczyk
+
+-->
+
+<!--
+
+Using Angular Material:
+
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that can be in foundin the LICENSE file at http://material.angularjs.org/license.
+
+-->
+
+<!--
+  Stock photos from:
+  https://www.pexels.com
+-->
+</html>

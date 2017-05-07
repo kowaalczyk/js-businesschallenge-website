@@ -1,0 +1,283 @@
+{
+  number_id: 1,
+  number: "I",
+  teams: [
+    {
+      place: 1,
+      team_name: "Opole Consulting Group",
+      members: [
+        {
+          name: "Michał Kulbacki",
+          about_short: '',
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Michał Radny",
+          about_short: "Prezes SKN Biznesu",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Łukasz Trojan",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Małgorzata Urbanowicz",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        }
+      ],
+      team_portrait: "opole-consulting.webp",
+      team_mentor: ""
+    },
+    {
+      place: 2,
+      team_name: "Business Surters",
+      members: [
+        {
+          name: "Alicja Doligańska",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Michał Gren",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Maciej Kieruzal",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Klaudia Pieczyńska",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        }
+      ],
+      team_portrait: "filler.jpg",
+      team_mentor: ""
+    },
+    {
+      place: 3,
+      team_name: "The Economists",
+      members: [
+        {
+          name: "Julia Jakubiak",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Jan Kruszewski",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Jan Pielat",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Krzysztof Sęk",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Nina Wieretiło",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        }
+      ],
+      team_portrait: "filler.jpg",
+      team_mentor: ""
+    },
+    {
+      place: 4,
+      team_name: "KWADRAT",
+      members: [
+        {
+          name: "Dawid Biernat",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Jakub Czugała",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Agnieszka Jaczewska",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Szymon Kujawa",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Mikołaj Madej",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        }
+      ],
+      team_portrait: "filler.jpg",
+      team_mentor: ""
+    },
+    {
+      place: 5,
+      team_name: "Team ZSE1 KRK",
+      members: [
+        {
+          name: "Mateusz Balicki",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Mateusz Hordyński",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Wojciech Krania",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        },
+        {
+          name: "Anna Sierpacka",
+          about_short: "",
+          about_long: "",
+          portrait: "filler.jpg"
+        }
+      ],
+      team_portrait: "filler.jpg",
+      team_mentor: "Patryk Zając"
+    }
+  ],
+  number_of_participants: 2000,
+  dates: [
+    "data_otw_rejestracji",
+    "data_kon_rejestracji",
+    "data_wysłania_pytań",
+    "data_deadline_1etap",
+    "data_wysłanie_kejsów",
+    "data_deadline_2etap",
+    "data_prezentacji",
+    "data_finału początek",
+    "data_finału_koniec"
+  ],
+  partners: [
+    {
+      type: "partner strategiczny",
+      name: "Procter & Gamble",
+      logo: "procter-gamble.jpg",
+      about: "",
+      website: "http://www.pg.com/pl_PL/"
+    },
+    {
+      type: "partner strategiczny",
+      name: "Stypendium im. Lesława A. Pagi",
+      logo: "stypendium-pagi.webp",
+      about: "",
+      website: "http://paga.org.pl/projekty/stypendium-im-leslawa-a-pagi/stypendium-im-leslawa-a-pagi"
+    },
+    {
+      type: "partner",
+      name: "Fundacja im. Lesława A. Pagi",
+      logo: "fundacja-pagi.webp",
+      about: "High School Business Challenge jest dofinansowywany w ramach projektu Stypendium im. Lesława A. Pagi, którego partnerami są Deloitte, Narodowy Bank Polski, Krajowy Depozyt Papierów Wartościowych SA i Fundacja im. Lesława A. Pagi. Fundacja im. Lesława A. Pagi, została powołana w 2003 by upamiętnić osobę i dzieła tego wybitnego polskiego ekonomisty. Od tego czasu, pod hasłem “Przyszłość. Zróbmy to razem”, realizuje ona liczne projekty edukacyjne, inwestując w młodych liderów i wspierając ich inicjatywy. Fundacja działa również na rzecz umacnianie regionalnego, skonsolidowanego rynku kapitałowego w Europie Środkowo-Wschodniej, do czego dąży we współpracy ze swoim partnerem strategicznym- Giełdą Papierów Wartościowych w Warszawie SA. Zapraszamy do odwiedzenia strony Fundacji i poczytania o innych, współorganizowanych przez nią ciekawych inicjatywach. ",
+      website: "http://www.paga.org.pl/"
+    },
+    {
+      type: "sponsor",
+      name: "Plusssz Active",
+      logo: "plusz.webp",
+      about: "Plusssz Active to kompozycja aktywnych składników oraz witamin, która łączy w sobie podwójne działanie – ułatwia koncentrację i pobudza pamięć. Zawarta w preparacie kofeina poprawia skupienie uwagi, ułatwia zapamiętywanie oraz zmniejsza senność. Magnez wpływa na układ nerwowy przez co redukuje stres i ogranicza zmęczenie.",
+      website: "http://www.plusssz.pl/produkty/plusssz-active"
+    },
+    {
+      type: "sponsor",
+      name: "Felix",
+      logo: "felix.webp",
+      about: "Dzięki firmie Felix mieliśmy okazję w przerwie zmagań spróbować ich nowych, jak i sprawdzonych produktów. Felix to jedna z najchętniej wybieranych marek słonych przekąsek z bardzo zróżnicowaną ofertą produktową. Najbardziej znanym produktem marki Felix są orzeszki solone w puszce. Ostatnio, wychodząc naprzeciw oczekiwaniom swoich konsumentów i zapotrzebowania na lżejsze przekąski, marka Felix wprowadziła na rynek nowe bardziej chrupiące Orzeszki z pieca, które nie brudzą rąk oraz Popcorners – chrupiące trójkąty z prażonej kukurydzy, tylko 7kcal każdy.",
+      website: "http://www.felixpolska.pl/"
+    },
+    {
+      type: "sponsor",
+      name: "Setka. Bar Polski Ludowej",
+      logo: "setka.webp",
+      about: "Bar Polski Ludowej Setka stworzony w scenerii i klimacie dawnego PRL-u to połączenie tradycji, doświadczenia i najwyższej jakości świadczonych usług gastronomicznych na kulinarnym szlaku Wrocławia! Wyjątkowa kompozycja prezentowanych potraw, doskonale wyselekcjonowane składniki oraz profesjonalna i doświadczona kadra ich kulinarnych mistrzów sprawia, że od wielu lat cieszą się zaufaniem swoich klientów a teraz również naszym. Połączenie elegancji i stylu dzisiejszych tradycji z otoczeniem sztuki kulinarnej PRL-u to niezwykła przygoda i wyzwanie, z którym zmierzają się każdego dnia. Zespół Setki to precyzyjnie dobrane grono kucharzy i rzetelnych asystentów, których największymi atutami są dbałość o jakość wykonywanej pracy, punktualność, elastyczność i doświadczenie. Pracują z zaufanymi i sprawdzonymi dostawcami najwyższej jakości produktów, aby zadowolić nawet najbardziej wymagających klientów. Dążą do tego, żeby każde spotkanie na długo pozostało zapamiętane jako wyjątkowe wydarzenie, miejmy nadzieję, że nasze również takie będzie!",
+      website: "http://setkabar.com/"
+    },
+    {
+      type: "sponsor",
+      name: "Lunch Bar Pokusa",
+      logo: "pokusa.webp",
+      about: "Znakomici kucharze codziennie zapraszają na Obiad Dnia, którym mogą cieszyć się mieszkańcy Krakowa i okolic już w 3 lokalizacjach, jak również po zamówieniu pod wyznaczony adres.",
+      website: "https://www.facebook.com/lunchbarpokusa"
+    },
+    {
+      type: "sponsor",
+      name: "Plusssz Active Forte",
+      logo: "plusz-forte.webp",
+      about: "Plusssz Active Forte jest polecanych w okresach intensywnego wysiłku psychicznego, szczególnie w czasie zaliczeń oraz egzaminów. Bogaty skład Plusssz Active Forte zawiera aż 3 substancje aktywne: kofeinę, taurynę i inozytol. Wysoka dawka kofeiny pobudzi pamięć, poprawi koncentrację oraz zlikwiduje uczucie senności. Dodatkowy kompleks 10 najważniejszych witamin w dawce 100% dziennego zapotrzebowania w obu produktach, uzupełni niedobory witamin w organizmie. Witaminy B6 i B12 zmniejszą uczucie zmęczenia a witamina C wzmocni odporność.",
+      website: "http://www.plusssz.pl/"
+    },
+    {
+      type: "sponsor",
+      name: "LA-SAD",
+      logo: "la-sad.webp",
+      about: "Firma LA-SAD to grupa producentów owoców skupiającą członków z sadowniczych zakątków Polski. Ich gospodarstwa od wielu pokoleń specjalizują się w uprawie sadów owocowych. Największą część produkcji stanowią jabłka, lecz w ofercie znajdują się również czereśnie, gruszki, śliwki i wiśnie. Siedziba firmy mieści się w gminie Błędów, zwanej największym sadem Europy.",
+      website: "http://www.la-sad.pl/"
+    },
+    {
+      type: "sponsor",
+      name: "Business Training",
+      logo: "business-training.webp",
+      about: "Business Training skupia praktyków biznesu, ekspertów, trenerów, coachów dostarczających aktualną wiedzę z zakresu psychologii biznesu oraz ekonomii, pokazują jak wykorzystać potencjał przedsiębiorstwa i ludzi w nim pracujących, pomagają uzyskać najwyższą efektywność przy użyciu minimalnych zasobów. Business Training to zespół pasjonatów z zakresu rozwoju osobistego, którzy prowadzą inspirujące szkolenia, warsztaty w formie coachingu. Firma działa na terenie całego kraju, współpracuje z Uczelniami i przeprowadza projekty szkoleniowe w formie Akademii Menadżera, Akademii Handlowca i Akademii Trenera i Coacha Biznesu.",
+      website: "http://www.business-training.edu.pl/"
+    },
+    {
+      type: "sponsor",
+      name: "Laser Tag Poznań",
+      logo: "laser-tag.webp",
+      about: "Rozgrywki Laser Tag prowadzone są na terenie XIX-wiecznego Fortu Va w Poznaniu, w jego podziemiach oraz na świeżym powietrzu. Laser Tag, zwany Laserowym Paintballem to sport zespołowy bardzo podobny do klasycznego paintballa. Rolę kulek w Laser Tagu przejmują jednak fale podczerwieni emitowane z karabinu. Następnie są one wychwytywane przez specjalne czujniki noszone przez graczy. Sprawia to, że gra nie powoduje urazów, udział w niej może wziąć każdy, bez względu na predyspozycje i wiek. Zachęcamy do zapoznania się z ofertą, która bez wątpienia zagwarantuje uczestnikom dreszczyk emocji.",
+      website: "http://lasertagpoznan.pl/"
+    },
+    {
+      type: "sponsor",
+      name: "Klub Odnowa",
+      logo: "klub-odnowa.webp",
+      about: "Klub Odnowa istnieje na rynku od 2011 roku,a jego główną specjalnością są Treningi Stabilizacji Kręgosłupa. Treningi funkcjonalne są idealne dla osób, które prowadzą siedzący tryb życia i zażywają mało ruchu. Długie godziny w szkolnej ławie czy przy biurku z pewnością wpłyną pozytywnie na stan naszej wiedzy, ale na kondycję już nie koniecznie...",
+      website: "http://www.odnowa-odchudzanie-trening.pl/"
+    },
+    {
+      type: "sponsor",
+      name: "Zamknięci w pokoju",
+      logo: "zamknieci-w-pokoju.webp",
+      about: 'Zamknięci w pokoju" jest rodzajem gry typu Room Escape, ale w rzeczywistości, w realnym pomieszczeniu. Escape room game jest formą rozrywki, w której uczestnicy zostają zamknięci w tematycznych pokojach i mają 60 minut na wydostanie się. Jedynie jako zespół będziecie w stanie rozwiązać liczne zadania i zagadki, które pozwolą Wam odnaleźć klucz do wyjścia.',
+      website: "http://www.zamknieciwpokoju.pl/"
+    }
+  ]
+}

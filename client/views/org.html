@@ -1,0 +1,17 @@
+<section layout="column" layout-gt-xs="row" layout-fill ng-init="getOrg()">
+    <div ng-repeat="organizator in organizatorzy" flex="100" flex-gt-sm="33" layout-fill>
+        <md-card>
+            <img ng-src="{{orgPath + organizator.logo}}" class="md-card-image">
+            <md-card-title>
+                <md-card-title-text>
+                    <span class="md-headline">{{organizator.name}}</span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-content>
+                <p class="hsbc-justify">
+                    {{organizator.about}}
+                </p>
+            </md-card-content>
+        </md-card>
+    </div>
+</section>

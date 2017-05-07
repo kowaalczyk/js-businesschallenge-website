@@ -1,0 +1,222 @@
+<script src="../controllers/case.js"></script>
+<div layout="column" ng-init="caseInit()">
+    <div class="hsbc-jumbo-large hsbc-case-jumbo" layout="column" flex>
+        <div class="hsbc-jumbo-inner" layout="column" layout-align="end end">
+            <h2>Zadania i materiały</h2>
+        </div>
+        <section layout="column" layout-gt-xs="row" layout-align="center center" layout-padding layout-margin flex>
+            <md-button md-theme="hsbc-red" class="md-raised md-primary md-hue-1" layout="column" layout-fill layout-align="center center"
+                       layout-wrap flex flex-gt-xs="33"
+                       href="" ng-click="goToAnchor('zadania')">
+                <div class="hsbc-icon-block">
+                    <i class="material-icons md-48">view_list</i>
+                </div>
+                <span>
+                Zadania
+            </span>
+            </md-button>
+            <md-button md-theme="hsbc-blue" class="md-raised md-primary md-hue-1" layout="column" layout-fill layout-align="center center"
+                       layout-wrap flex flex-gt-xs="33"
+                       href="" ng-click="goToAnchor('merytoryka')">
+                <div class="hsbc-icon-block">
+                    <i class="material-icons md-48">business</i>
+                </div>
+                <span>
+                Zagadnienia merytoryczne
+            </span>
+            </md-button>
+            <md-button md-theme="hsbc-green" class="md-raised md-primary md-hue-1" layout="column" layout-fill layout-align="center center"
+                       layout-wrap flex flex-gt-xs="33"
+                       href=""  ng-click="goToAnchor('wiedza')">
+                <div class="hsbc-icon-block">
+                    <i class="material-icons md-48">book</i>
+                </div>
+                <span>
+                Źródła wiedzy
+            </span>
+            </md-button>
+        </section>
+    </div>
+    <section md-theme="hsbc-red" id="zadania" class="md-whiteframe-1dp hsbc-current-section"
+             layout="column" md-colors="{background: 'default-background-50'}">
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools" layout="row">
+                <h3 class="md-display-1" flex>Zadania</h3>
+            </div>
+        </md-toolbar>
+        <div layout="column" layout-margin layout-padding flex>
+            <h3 class="md-headline">Zadania z bieżącej edycji</h3>
+            <div flex layout-align="start center" layout="column" layout-gt-xs="row" layout-wrap
+                 md-theme="hsbc-blue">
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2017-1.pdf">
+                    Etap I
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2017-1o.pdf">
+                    Etap I (rozwiązania)
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2017-2.pdf">
+                    Etap II
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2017-3a.pdf">
+                    Etap III (dzień 1)
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2017-3b.pdf">
+                    Etap III (dzień 2)
+                </md-button>
+            </div>
+        </div>
+        <md-divider></md-divider>
+
+        <div layout="column" layout-margin layout-padding flex>
+            <h3 class="md-headline">Zadania z II edycji (2016)</h3>
+            <div flex layout-align="start center" layout="column" layout-gt-xs="row" layout-wrap
+                md-theme="hsbc-blue">
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2016-1.pdf">
+                    Etap I
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2016-1o.pdf">
+                    Etap I (rozwiązania)
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2016-2.pdf">
+                    Etap II
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2016-3a.pdf">
+                    Etap III (dzień 1)
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2016-3b.pdf">
+                    Etap III (dzień 2)
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2016-3c.pdf">
+                    Dane do etapu III (dzień 2)
+                </md-button>
+            </div>
+        </div>
+        <md-divider></md-divider>
+
+        <div layout="column" layout-margin layout-padding flex>
+            <h3 class="md-headline">Zadania z I edycji (2015)</h3>
+            <div flex layout-align="start center" layout="column" layout-gt-xs="row" layout-wrap
+                md-theme="hsbc-green">
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2015-1.pdf">
+                    Etap I
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2015-1o.pdf">
+                    Etap I (rozwiązania)
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2015-2.pdf">
+                    Etap II
+                </md-button>
+                <md-button class="md-raised" md-ripple-size="full" href="/zadania/2015-3.pdf">
+                    Etap III
+                </md-button>
+            </div>
+        </div>
+    </section>
+
+    <section md-theme="hsbc-blue" id="merytoryka" class="md-whiteframe-1dp hsbc-current-section"
+             layout="column" md-colors="{background: 'default-background-50'}">
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools" layout="row">
+                <h3 class="md-display-1" flex>Zagadnienia merytoryczne</h3>
+            </div>
+        </md-toolbar>
+        <div layout="row" flex>
+            <div layout="row" flex flex-gt-sm="50">
+                <md-list flex layout-fill>
+                    <md-list-item class="md-1-line" ng-click="content.setTab(0)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">keyboard_arrow_right</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Zagadnienia merytoryczne</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-1-line" ng-click="content.setTab(1)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">keyboard_arrow_right</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Podstawy ekonomii</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-1-line" ng-click="content.setTab(2)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">keyboard_arrow_right</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Własny biznes</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-1-line" ng-click="content.setTab(3)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">keyboard_arrow_right</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Zarządzanie</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-1-line" ng-click="content.setTab(4)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">keyboard_arrow_right</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Finanse i analiza</span>
+                        </div>
+                    </md-list-item>
+                </md-list>
+            </div>
+            <div hide show-gt-sm flex="50" layout-margin layout-padding class="hsbc-right-tab">
+                <h4 class="md-headline">{{content.tabsAbout[currentTab].title}}</h4>
+                <md-divider></md-divider>
+                <p class="hsbc-justify">
+                    {{content.tabsAbout[currentTab].text}}
+                </p>
+                <div class="hsbc-tab-media" layout="column" layout-align="center center">
+                    <md-button ng-if="content.tabsAbout[currentTab].button" ng-href="content.tabsAbout[currentTab].href">
+                        {{content.tabsAbout[currentTab].button.text}}
+                    </md-button>
+                    <img ng-if="content.tabsAbout[currentTab].img" ng-src="{{imagePath + content.tabsAbout[currentTab].img}}">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section md-theme="hsbc-green" id="wiedza" class="md-whiteframe-1dp hsbc-current-section"
+             layout="column" md-colors="{background: 'default-background-50'}">
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools" layout="row">
+                <h3 class="md-display-1" flex>Źródła wiedzy</h3>
+            </div>
+        </md-toolbar>
+        <div layout="column" layout-margin layout-padding>
+            <p flex class="hsbc-justify">
+                Z czego należy korzystać w przygotowaniach do HSBC? W naszym konkursie chcemy sprawdzić Waszą zdolność analitycznego myślenia, wyciągania wniosków i poszukiwania informacji w różnorodnych źródłach. To wszystko w warunkach praktyki rynkowej.
+            </p>
+            <p flex class="hsbc-justify">
+                Nie podamy Wam listy 30 tomów o teorii zarządzania, makroekonomii i mikroekonomii oraz analizie finansów przedsiębiorstwa. Możemy dać Wam jednak kilka rad.
+            </p>
+            <p flex class="hsbc-justify">
+                Wiedza jest niezwykle cenna. Zwłaszcza, gdy będziecie mogli wykorzystać ją w praktyce.
+            </p>
+            <p flex class="hsbc-justify">
+                Ucząc się ekonomii możecie skorzystać z wielu renomowanych podręczników. Być może warto zajrzeć do Podstaw Ekonomii prof. Bogusława Czarnego (PWE). Ciekawscy mogą sięgnąć też po kompleksowe podręczniki jak choćby światowy bestseller – Mikroekonomię i Makroekonomię G. Mankiwa i M. Taylora. Może jednak będziecie woleli skorzystać z opracowań noblisty Samuelsona lub polskich pozycji? Zachęcamy. Chcemy byście rozumieli prawa rządzące gospodarką, a nie znali treść konkretnych książek.
+            </p>
+            <p flex class="hsbc-justify">
+                Ponadto czytajcie prasę (Puls Biznesu, dział ekonomiczny Rzeczpospolitej), oglądajcie serwisy ekonomiczne i korzystajcie z Internetu. Uczycie się obserwacji, analizy i wnioskowania. Wiele renomowanych instytucji przygotowało skierowane właśnie do Was portale i platformy edukacyjne. Odwiedźcie www.nbportal.pl lub platofrmę e-learningową Olimpiady Przedsiębiorczości.
+            </p>
+            <p flex class="hsbc-justify">
+                Poszukując naukowych podstaw zarządzania i prowadzenia własnej działalności powinniście skorzystać z Waszych podręczników od przedsiębiorczości (np.: Przedsiębiorczość bez Tajemnic, WSiP). Być może nauczyciel poleci Wam też ciekawą pozycję o szerszym zakresie materiału? W tym dziale również warto korzystać z ogólnie dostępnych źródeł. Zajrzyj do krajowych tygodników (Bloomberg Businessweek) i miesięczników (Forbes) oraz renomowanych światowych czasopism (Financial Times, The Economist). Warto odwiedzić też internetowe serwisy powyższych tytułów.
+            </p>
+            <p flex class="hsbc-justify">
+                Zagadnienia związane z finansami rozbudzają od dekad ludzką wyobraźnię. Powstały miliony pozycji mówiących o financial industry. Koniecznie odwiedź stronę Giełdy Papierów Wartościowych w Warszawie i serwisy giełdowe takie jak money.pl czy stooq.pl. Lektura czasopism takich jak parkiet będzie również bardzo wzbogacająca. Teorię analizy finansowej znajdziecie w takich pozycjach jak Zarządzania finansami przedsiębiorstwa W. Bienia (Diffin) lub Analiza finansowa przedsiębiorstwa W. Gabrusiewicza (PWE)
+            </p>
+            <p flex class="hsbc-justify">
+                Pamiętajcie! Sukces w HSBC odniesiecie, gdy będziecie z zaciekawieniem pogłębiać swoją wiedzę na tematy ekonomiczne i biznesowe. Regularne śledzenie wiadomości biznesowych to doskonałe źródło inspiracji i sposób na rozpoznanie rzeczywistości gospodarczej. Zapewne nie raz traficie w teście na zagadnienia, o których niewiele wiecie. W takim przypadku nie zniechęcajcie się. Poszukajcie książek, portali, gazet i innych źródeł wiedzy. Dowiedzcie się więcej na ten temat i zmierzcie się ponownie z zadaniem. Na pewno Wam się uda!
+            </p>
+        </div>
+    </section>
+</div>

@@ -1,0 +1,245 @@
+/* MD ICONS ------------------------------------------------------------------*/
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-60 { font-size: 60px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+/* FIREFOX LAYOUT FIX ------------------------------------------------------- */
+
+.layout-firefox-fix {
+  /*https://material.angularjs.org/1.1.0/layout/tips*/
+  overflow: auto;
+}
+
+.hsbc-team-container {
+  /* Firefox fix */
+  overflow: auto;
+}
+
+/* CUSTOM GLOBAL STYLES ----------------------------------------------------- */
+.hsbc-view-container {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+.hsbc-main-menu-logo > img {
+  height: 88px;
+  width: 88px;
+  margin: auto;
+}
+
+.hsbc-justify {
+  text-align: justify;
+}
+
+/* this doesn't work, but it's not necessary either:
+.hsbc-menu-toolbar {
+  position: fixed;
+}*/
+
+/* CUSTOM ELEMENT STYLES ---------------------------------------------------- */
+a.md-button {
+    display: inline-block;
+}
+
+.hsbc-toast-container {
+  position: absolute;
+  top: 88px;
+  right: 240px;
+}
+
+.hsbc-jumbo {
+  width: 100%;
+  height: 320px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+.hsbc-jumbo-large {
+  width: 100%;
+  min-height: 512px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: right;
+}
+
+.hsbc-jumbo-inner {
+  width: 100%;
+  height: 320px;
+  background: transparent;
+}
+
+/* Images for jumbotron */
+.hsbc-1 { background-image: url('/img/hsbc-final-1.jpg'); } /* NOTE: No better quality image for edition 1. */
+.hsbc-2 { background-image: url('/img/hsbc-final-2.jpg'); }
+.hsbc-main { background-image: url('/img/warsaw.jpg'); }
+.hsbc-case-jumbo { background-image: url('/img/case-background.jpg'); }
+.hsbc-winners-2016 { background-image: url('/img/vlo-jumbo.jpg'); }
+.hsbc-winners-2015 { background-image: url('/img/opole-consulting.jpg'); }
+
+.hsbc-jumbo > h2{
+  font-size: 72px;
+  margin: 18px 32px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 1px 4px 2px #000;
+  text-transform: uppercase;
+  text-align: inherit;
+}
+
+.hsbc-jumbo-inner > h2 {
+  font-size: 72px;
+  margin: 0 32px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: 900;
+  color: #ffffff;
+  text-shadow: 1px 4px 2px #000;
+  text-transform: uppercase;
+  text-align: inherit;
+}
+
+.hsbc-team-container h3 > small {
+  text-align: right;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+.hsbc-h-320 {
+  max-height: 320px;
+  overflow: hidden;
+}
+.hsbc-h-320 > img {
+  width: 100%;
+  position: relative;
+  height: auto;
+  margin: auto;
+}
+
+
+/* TODO: This works ok gt-xs size but causes occasional bugs on xs view */
+/* NOTE: Potentially fixable with ng-ifs or ng-class or even md elements */
+.hsbc-team-container { margin: 4px 0; }
+.hsbc-team-container.left { margin-right: 4px; }
+.hsbc-team-container.right { margin-left: 4px; }
+.hsbc-finalist-container { margin-right: 6px; }
+.hsbc-finalist-container:last-child { margin: 4px 0; }
+
+.hsbc-partner-img {
+  max-width: 320px;
+  max-height: 320px;
+  overflow: hidden;
+}
+
+.hsbc-partner-img > img {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.hsbc-icon-block {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.hsbc-icon-block > i {
+  margin: auto;
+}
+
+.hsbc-list-icon {
+  margin-right: 10px;
+}
+
+.hsbc-margin-vertical {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hsbc-harmonogram {
+  text-align: center;
+}
+
+.hsbc-org-head {
+  text-align: center;
+  margin: auto;
+}
+
+.hsbc-current-section {
+  margin-bottom: 16px;
+}
+
+.hsbc-icon-lower {
+  margin-top: 16px;
+}
+
+.hsbc-right-tab {
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-left-color: rgba(0,0,0,0.12);
+  /* Like md-divider, but vertical */
+}
+
+.hsbc-tab-media {
+  /*max-height: 320px;
+  max-width: 540px;
+  width: 100%;*/
+  overflow: hidden;
+}
+
+.hsbc-tab-media > img {
+  width: 100%;
+  height: auto;
+}
+
+.hsbc-contact-right {
+  margin-left: 480px;
+}
+
+.hsbc-winners-pad {
+  margin-bottom: 16px;
+}
+
+.hsbc-winners-info > h3 {
+  margin-left: 16px;
+}
+
+.hsbc-winners-info > p {
+  margin-left: 16px;
+}
+
+.hsbc-winner-avatar {
+  height: 88px;
+  width: 88px;
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+}
+
+.hsbc-youtube-container {
+  position: relative; padding-bottom: 56.25%; padding-top: 30px; height: 0; overflow: hidden;
+  min-height: 480px;
+}
+
+.hsbc-youtube-container iframe {
+  position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+  min-height: 480px;
+}
+
+a.hsbc-text-link:link, a.hsbc-text-link:active, a.hsbc-text-link:visited {
+  color: #323232;
+}

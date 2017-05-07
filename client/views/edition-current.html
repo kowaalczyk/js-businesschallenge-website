@@ -1,0 +1,303 @@
+<div layout="column" ng-init="getEdition()">
+    <div ng-class="jumboImageClass" class="hsbc-jumbo-large" layout="column" flex>
+        <div class="hsbc-jumbo-inner" layout="column" layout-align="end end">
+            <h2>III edycja</h2>
+        </div>
+        <section layout="column" layout-gt-xs="row" layout-align="center center" layout-padding layout-margin flex>
+            <md-button md-theme="hsbc-yellow" class="md-raised md-primary md-hue-1" layout="column" layout-align="center center" layout-fill flex flex-gt-xs="25"
+                       href="" ng-click="goToAnchor('aktualnosci')">
+                <div class="hsbc-icon-block">
+                    <i class="material-icons md-48">new_releases</i>
+                </div>
+                <span>
+                    Aktualności
+                </span>
+            </md-button>
+            <md-button md-theme="hsbc-red" class="md-raised md-primary md-hue-1" layout="column" layout-align="center center" layout-fill flex flex-gt-xs="25"
+                       href="" ng-click="goToAnchor('o-konkursie')">
+                <div class="hsbc-icon-block">
+                    <i class="material-icons md-48">info_outline</i>
+                </div>
+                <span>
+                    O konkursie
+                </span>
+            </md-button>
+            <md-button md-theme="hsbc-blue" class="md-raised md-primary md-hue-1" layout="column" layout-align="center center" layout-fill flex flex-gt-xs="25"
+                       href="" ng-click="goToAnchor('harmonogram')">
+                <div class="hsbc-icon-block">
+                    <i class="material-icons md-48">list</i>
+                </div>
+                <span>
+                Harmonogram
+                </span>
+            </md-button>
+            <md-button md-theme="hsbc-green" class="md-raised md-primary md-hue-1" layout="column" layout-align="center center" layout-fill flex flex-gt-xs="25"
+                       href=""  ng-click="goToAnchor('faq')">
+                <div class="hsbc-icon-block">
+                    <i class="material-icons md-48">question_answer</i>
+                </div>
+                <span>
+                FAQ i Regulamin
+            </span>
+            </md-button>
+        </section>
+    </div>
+    <section md-theme="hsbc-yellow" id="aktualnosci" class="md-whiteframe-4dp hsbc-current-section" layout="column"
+             md-colors="{background: 'default-background-50'}">
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools" layout="row">
+                <h3 class="md-display-1" flex>Aktualności</h3>
+            </div>
+        </md-toolbar>
+        <!-- Nowa aktualnosc skopiowana od pierwszej -->
+        <!-- md-divider pomiedzy nimi -->
+        <div layout="column" layout-margin layout-padding flex>
+            <h3 class="md-headline">Wyniki konkursu</h3>
+            <p>
+                Oto wyniki tegorocznej edycji konkursu - gratulujemy wszystkim finalistom i życzymy dalszych sukcesów! <br/>
+                Treści zadań z finału dostępne są już w zakładce <a class="hsbc-text-link" href="#/zadania">zadania i materiały</a>
+            </p>
+            <md-list flex>
+                <md-list-item class="md-3-line" ng-click="null" ng-repeat="team in edition.teams">
+                    <div class="md-list-item-text" layout="column">
+                        <h3>{{team.team_name}}</h3>
+                        <h4 ng-if="team.place <= 3">{{team.place}}. miejsce</h4>
+                        <h4 ng-if="team.place > 3">finaliści</h4>
+                        <p>
+                            <span ng-repeat="member in team.members">{{member.name}} <span ng-if="!$last"> - </span> </span>
+                        </p>
+                    </div>
+                </md-list-item>
+            </md-list>
+        </div>
+        <md-divider></md-divider>
+        <div layout="column" layout-margin layout-padding flex>
+            <h3 class="md-headline">Wyniki II etapu</h3>
+            <p>
+                Oto finaliści tegorocznej edycji - 6 najlepszych zespołów z całej Polski, które zmierzą się ze sobą podczas ostatniego etapu konkursu.
+                Wkrótce opublikuejmy harmonogram finału - w tym czasie zapraszamy do zapoznania się z <a class="hsbc-text-link" href="#/zadania">zadaniami </a>
+                z poprzednich etapów,
+                oraz ze zdjęciami z prezentacji, które można obejrzeć
+                <a class="hsbc-text-link" href="https://www.facebook.com/pg/hsbcpoland/photos/?tab=albums" target="_blank"> na naszym Facebooku </a>.
+            </p>
+            <div class="hsbc-tab-media" layout="column" layout-margin>
+                <img src="/img/finalists.jpg"/>
+            </div>
+        </div>
+        <md-divider></md-divider>
+        <div layout="column" layout-margin layout-padding flex>
+            <h3 class="md-headline">Jury</h3>
+            <p>
+                Zapraszamy do zapoznania się z sylwetkami członków CIMA, którzy zasiedli w jury w poszczególnych okręgach tegorocznych zmagań.<br/>
+            </p>
+            <div class="hsbc-tab-media" layout="column" layout-margin>
+                <img src="/img/jury-2-1.png"/>
+            </div>
+        </div>
+        <md-divider></md-divider>
+        <div layout="column" layout-margin layout-padding flex>
+            <h3 class="md-headline">Wyniki testu</h3>
+            <p>
+                Wyniki zespołów z poszczególnych okręgów:<br/>
+            </p>
+            <div layout="column" layout-gt-xs="row" flex>
+                <md-button href="/documents/2017-1-krakow.pdf" flex
+                           md-theme="hsbc-green" class="md-raised " md-ripple-size="full">
+                    Kraków
+                </md-button>
+                <md-button href="/documents/2017-1-gdansk.pdf" flex
+                           md-theme="hsbc-green" class="md-raised " md-ripple-size="full">
+                    Gdańsk
+                </md-button>
+                <md-button href="/documents/2017-1-poznan.pdf" flex
+                           md-theme="hsbc-green" class="md-raised " md-ripple-size="full">
+                    Poznań
+                </md-button>
+                <md-button href="/documents/2017-1-warszawa.pdf" flex
+                           md-theme="hsbc-green" class="md-raised " md-ripple-size="full">
+                    Warszawa
+                </md-button>
+                <md-button href="/documents/2017-1-wroclaw.pdf" flex
+                           md-theme="hsbc-green" class="md-raised " md-ripple-size="full">
+                    Wrocław
+                </md-button>
+            </div>
+        </div>
+        <md-divider></md-divider>
+        <div layout="column" layout-margin layout-padding flex>
+            <h3 class="md-headline">Rejestracja zespołów</h3>
+            <p>
+                Rejestracja trwała od 7 grudnia do 15 stycznia. <br/>
+                W III edycji High School Business Challenge wzięło udział 400 zespołów z całej Polski.
+            </p>
+            <md-button href="https://goo.gl/forms/cquBl8AyjLgwX8N03" ng-disabled="true"
+                       md-theme="hsbc-green" class="md-raised md-primary" md-ripple-size="full">
+                Formularz rejestracyjny
+            </md-button>
+        </div>
+        <md-divider></md-divider>
+        <div layout="column" layout-margin layout-padding flex>
+            <div class="hsbc-youtube-container" layout="column" layout-margin>
+                <iframe src="https://www.youtube.com/embed/3RO1oqFMMA0" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <section md-theme="hsbc-red" id="o-konkursie" class="md-whiteframe-4dp hsbc-current-section" layout="column"
+             md-colors="{background: 'default-background-50'}">
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools" layout="row">
+                <h3 class="md-display-1" flex>O konkursie</h3>
+            </div>
+        </md-toolbar>
+        <div layout="row" flex>
+            <div layout="row" flex flex-gt-sm="50">
+                <md-list flex layout-fill>
+                    <md-list-item class="md-1-line" ng-click="edition.setTab(0)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">business</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Konkurs drużynowy o tematyce biznesowej</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-1-line" ng-click="edition.setTab(1)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">lightbulb_outline</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Zadania w formie case study</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-1-line" ng-click="edition.setTab(2)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">attach_money</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Nagrody warte ponad 15 000 zł</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-1-line" ng-click="edition.setTab(3)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">work</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Rozwój praktycznych umiejętności</span>
+                        </div>
+                        <md-divider></md-divider>
+                    </md-list-item>
+                    <md-list-item class="md-1-line" ng-click="edition.setTab(4)" layout="row" layout-align="center center">
+                        <div class="hsbc-margin-vertical hsbc-icon-block hsbc-list-icon">
+                            <i class="material-icons md-36">people</i>
+                        </div>
+                        <div class="hsbc-margin-vertical md-list-item-text">
+                            <span class="md-title">Zbierz zespół i zarejestruj się do 15 stycznia!</span>
+                        </div>
+                    </md-list-item>
+                </md-list>
+            </div>
+            <div hide show-gt-sm flex="50" layout="column" layout-margin layout-padding class="hsbc-right-tab">
+                <h4 class="md-headline">{{edition.tabsAbout[currentTab].title}}</h4>
+                <md-divider></md-divider>
+                <p class="hsbc-justify">
+                    {{edition.tabsAbout[currentTab].text}}
+                </p>
+                <div class="hsbc-tab-media" layout="column" layout-align="center center">
+                    <md-button ng-if="edition.tabsAbout[currentTab].button"  ng-disabled="true" ng-href="{{edition.tabsAbout[currentTab].button.href}}"
+                        class="md-raised" md-ripple-size="full">
+                        {{edition.tabsAbout[currentTab].button.text}}
+                    </md-button>
+                    <img ng-if="edition.tabsAbout[currentTab].img" ng-src="{{imagePath + edition.tabsAbout[currentTab].img}}">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section md-theme="hsbc-blue" id="harmonogram" class="md-whiteframe-1dp hsbc-current-section" layout="column"
+             md-colors="{background: 'default-background-50'}">
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools" layout="row">
+                <h3 class="md-display-1" flex>Harmonogram III edycji</h3>
+            </div>
+        </md-toolbar>
+        <div layout="column" layout-gt-xs="row" flex>
+            <md-button class=" md-ink-ripple"
+               layout="column" layout-align="center center" layout-wrap flex flex-gt-xs="25"
+               href="">
+                <div class="hsbc-icon-block hsbc-icon-lower">
+                    <i class="material-icons md-60">people</i>
+                </div>
+                <p>
+                    Rejestracja<br/>
+                    7.12 - 15.01
+                </p>
+            </md-button>
+            <md-button class=" md-ink-ripple"
+               layout="column" layout-align="center center" layout-wrap flex flex-gt-xs="25"
+               href="">
+                <div class="hsbc-icon-block hsbc-icon-lower">
+                    <i class="material-icons md-60">laptop_chromebook</i>
+                </div>
+                <p>
+                    Test online<br/>
+                    17.01 - 31.01
+                </p>
+            </md-button>
+            <md-button class=" md-ink-ripple"
+               layout="column" layout-align="center center" layout-wrap flex flex-gt-xs="25"
+               href="">
+                <div class="hsbc-icon-block hsbc-icon-lower">
+                    <i class="material-icons md-60">slideshow</i>
+                </div>
+                <p>
+                    Prezentacje<br/>
+                    18.03
+                </p>
+            </md-button>
+            <md-button class=" md-ink-ripple"
+               layout="column" layout-align="center center"layout-wrap flex flex-gt-xs="25"
+               href="">
+                <div class="hsbc-icon-block hsbc-icon-lower">
+                    <i class="material-icons md-60">next_week</i>
+                </div>
+                <p>
+                    Finał<br/>
+                    21.04 - 22.04
+                </p>
+            </md-button>
+        </div>
+    </section>
+    <section md-theme="hsbc-green" id="faq" class="md-whiteframe-1dp hsbc-current-section" layout="column"
+             md-colors="{background: 'default-background-50'}">
+        <md-toolbar class="md-hue-2">
+            <div class="md-toolbar-tools" layout="row">
+                <h3 class="md-display-1" flex>FAQ</h3>
+            </div>
+        </md-toolbar>
+        <md-list flex layout-fill>
+            <md-list-item class="md-3-line" ng-repeat="faq in edition.faqs"
+                          layout="row" layout-align="center center">
+                <div class="md-list-item-text">
+                    <h5 class="md-title">{{faq.q}}</h5>
+                    <p class="md-subhead">{{faq.a}}<br/></p>
+                </div>
+            </md-list-item>
+        </md-list>
+        <md-divider></md-divider>
+        <div layout="column" layout-gt-xs="row" flex>
+            <md-button class="md-ink-ripple"
+                       layout="column" layout-align="center center" flex
+                       href="/documents/regulamin-2016.pdf" ng-click="null">
+                <div layout-padding>
+                    <div class="hsbc-icon-block">
+                        <i class="material-icons md-48">content_paste</i>
+                    </div>
+                    <p>
+                        Regulamin bieżącej edycji konkursu
+                    </p>
+                </div>
+            </md-button>
+        </div>
+    </section>
+</div>

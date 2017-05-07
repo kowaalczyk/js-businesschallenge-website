@@ -1,0 +1,204 @@
+﻿{
+  "_id" : { "$oid" : "5833745f6cd759f587697ed3"} ,
+  "number_id" : 2.0 ,
+  "number" : "II" ,
+  "teams" : [
+    {
+      "place" : 1.0 ,
+      "team_name" : "V LO HSBC TEAM" ,
+      "team_about": "Chyba żaden zespòł nie ma tak oddanej rzeszy fanów w internecie, jak VLO HSBC Team. I nie chodzi tylko o klikanie „Lubię to” na Facebooku czy trollowanie w komentarzach (do którego Jacek Kałuża zachęca). Czasami są w stanie wydać część kieszonkowego na wsparcie drużyny swojego idola albo na film o niej. VLO HSBC Team, drużyna, której błyskawiczna droga na szczyt i rozrzutny styl życia wzbudziły zainteresowanie CBŚ",
+      "members" : [
+        {
+          "name" : "Jacek Kałuża" ,
+          "about_short" : "Lider zespołu, członek stowarzyszenia \"Dziobaki\"" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Krzyszof Kowalczyk" ,
+          "about_short" : "Student informatyki na UW" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        },
+        {
+          "name" : "Wojciech Maślakiewicz" ,
+          "about_short" : "Student 1 roku na SGH" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"} ,
+        {
+          "name" : "Mikołaj Ostrzołek" ,
+          "about_short" : "Student ekonomii na UW" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Patryk Włoch" ,
+          "about_short" : "Spierdolił do Anglii XD" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        }] ,
+      "team_portrait" : "vlo.jpg" ,
+      "team_mentor" : "Monika Palonek"
+    } ,
+    {
+      "place" : 2.0 ,
+      "team_name" : "MAŁE MIKI" ,
+      "members" : [
+        {
+          "name" : "Filip Kwiatkowski" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Cezary Blank" ,
+          "about_short" : "Student informatyki na UW" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        { "name" : "Jakub Gołębiewski" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        { "name" : "Kamil Krakowski" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Łukasz Grodzicki" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        }] ,
+      "team_portrait" : "filler.jpg" ,
+      "team_mentor" : "Ewa Rashid"
+    } ,
+    {
+      "place" : 3.0 ,
+      "team_name" : "LATIMERIE BIZNESU" ,
+      "members" : [
+        {
+          "name" : "Konrad Grabowicz" ,
+          "about_short" : "Student 1 roku na SGH" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Nikodem Kramarz" ,
+          "about_short" : "Student 1 roku na SGH" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Mikołaj Jaśkowiak" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        }] ,
+      "team_portrait" : "filler.jpg" ,
+      "team_mentor" : "Krzysztof Aszkowski"
+    } ,
+    {
+      "place" : 4.0 ,
+      "team_name" : "Papaje" ,
+      "members" : [
+        {
+          "name" : "Jan Krasowski" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Jakub Dziadur" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Mateusz Gurbiel" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Franciszek Białek" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        }] ,
+      "team_portrait" : "filler.jpg" ,
+      "team_mentor" : "Monika Palonek"
+    } ,
+    {
+      "place" : 5.0 ,
+      "team_name" : "The Big Four" ,
+      "members" : [
+        {
+          "name" : "Karolina Gąsior" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Agnieszka Ziajka" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Katarzyna Pezda" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Angelika Czechowska" ,
+          "about_short" : "" , "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        }] ,
+      "team_portrait" : "filler.jpg" ,
+      "team_mentor" : "Aleksandra Jeż-Pawlak"
+    } ,
+    {
+      "place" : 6.0 ,
+      "team_name" : "Hanza" ,
+      "members" : [
+        {
+          "name" : "Krzysztof Zalewski" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Bartosz Roman" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Wojciech Lambucki" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        } ,
+        {
+          "name" : "Igor Jeznach" ,
+          "about_short" : "" ,
+          "about_long" : "" ,
+          "portrait" : "filler.jpg"
+        }] ,
+      "team_portrait" : "filler.jpg" ,
+      "team_mentor" : "Danuta Borek"
+    }] ,
+  "number_of_participants" : 2000.0 ,
+  "dates" : [ "data_otw_rejestracji" , "data_kon_rejestracji" , "data_wysłania_pytań" , "data_deadline_1etap" , "data_wysłanie_kejsów" , "data_deadline_2etap" , "data_prezentacji" , "data_finału początek" , "data_finału_koniec"] ,
+  "partners" : [
+    { "type" : "partner strategiczny" , "name" : "PKP Intercity" , "logo" : "pkp-ic.webp" , "about" : "" , "website" : "http://www.intercity.pl/pl/site/o-nas/o-firmie/"} ,
+    { "type" : "partner merytoryczny" , "name" : "EY" , "logo" : "ey.webp" , "about" : "EY to światowy lider w zakresie profesjonalnych usług doradczych. Ponad 190 000 specjalistów w zakresie audytu, doradztwa biznesowego, podatkowego i prawnego oraz transakcyjnego, zatrudnionych w 150 krajach, łączy swoją wiedzę i międzynarodowe doświadczenie ze znajomością lokalnych uwarunkowań. EY to również  największa firma doradcza na polskim rynku, zatrudniająca ponad 1800 profesjonalistów w Warszawie, Katowicach, Krakowie, Łodzi, Poznaniu, Wrocławiu i od lutego również w Gdańsku. Poprzez swoje działania ma ambicję budować lepszy świat pracy dla swoich pracowników, klientów i całej społeczności." , "website" : "http://www.ey.com/pl/pl/careers"} ,
+    { "type" : "partner merytoryczny" , "name" : "CIMA Chartered Institute of Management Accountants" , "logo" : "cima.webp" , "about" : "Założona w 1919 r. Chartered Institute of Management Accountants (CIMA) jest czołową i jednocześnie największą organizacją zrzeszającą specjalistów z dziedziny rachunkowości zarządczej, liczącą ponad 227 000 członków i studentów w 179 krajach. Kwalifikacja CIMA to mocny atut podczas poszukiwania pracy, ceniony przez pracodawców rekrutujących przyszłych liderów biznesu. W Polsce specjalna ścieżka CIMA oferowana na uniwersytetach ekonomicznych cieszy się dużą popularnością ze względu na jej uniwersalność oraz poważanie u pracodawców z branży finansowej." , "website" : "http://www.cimaglobal.com/Our-locations/Poland/"} ,
+    { "type" : "Konkurs dofinansowany w ramach projektu Stypendium im. Lesława A. Pagi." , "name" : "Stypendium im. Lesława A. Pagi" , "logo" : "stypendium-pagi.webp" , "about" : "Stypendium im. Lesława A. Pagi to program grantowy, którego celem jest wspieranie nowatorskich i opartych na wiedzy projektów edukacyjnych i naukowo-badawczych, zwłaszcza w zakresie rynku kapitałowego, prowadzonych przez organizacje studenckie i akademickie koła naukowe uczelni wyższych w całym kraju, a także nieformalne grupy studentów." , "website" : "http://paga.org.pl/projekty/stypendium-im-leslawa-a-pagi/stypendium-im-leslawa-a-pagi"} ,
+    { "type" : "partner" , "name" : "Rascal Industry" , "logo" : "rascal.webp" , "about" : "Firma Rascal Industry od 2012 roku zaopatruje uczelnie i licea w  bluzy i t-shirty, skutecznie poprawiając wygląd polskiego środowiska akademickiego! Noszenie przez uczniów bluz licealnych to promocja szkoły poza jej murami oraz podkreślenie jej pozycji jako świetnej placówki edukacyjnej, ale też bluzy idealnie odgrywają rolę czynnika integrującego społeczność liceum, wzmacniają poczucie przynależności i dumy z nim związanej zarówno wśród obecnych uczniów, jak i absolwentów. Żadna pamiątka nie przypomina o licealnych latach cieplej niż bluza szkolna. Dzięki doświadczeniu Rascal’a, zdobytego dzięki współpracy z ponad 120 szkołami i uniwersytetami w Polsce, możecie być pewni profesjonalizmu i jakości wykonania swoich bluz. Zapraszamy na stronę internetową Rascal’a i zachęcamy do kontaktu." , "website" : "http://sklep.rascalindustry.pl/"}
+  ]
+}

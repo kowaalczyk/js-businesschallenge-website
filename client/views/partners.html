@@ -1,0 +1,31 @@
+<div layout="column" ng-init="getEdition()">
+    <h2  flex style="text-transform: uppercase; text-align: center;">
+        Partnerzy <span>{{edition.number}}</span> edycji
+    </h2>
+    <md-divider></md-divider>
+
+    <section layout="column">
+        <div ng-repeat="partner in edition.partners">
+            <md-card layout="column" layout-gt-sm="row" layout-padding>
+                <a ng-href="{{partner.website}}" target="_blank"
+                   flex="100" flex-gt-sm="50" layout-padding layout-margin layout-fill
+                   class="hsbc-partner-img">
+                    <img ng-src="{{partnerPath + partner.logo}}" class="" />
+                </a>
+                <div flex="100" flex-gt-sm="50">
+                    <md-card-title>
+                        <md-card-title-text>
+                            <span class="md-headline">{{partner.name}}</span>
+                            <span class="md-subhead" style="text-transform: uppercase;">{{partner.type}}</span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-content flex>
+                        <p class="hsbc-justify">
+                            {{partner.about}}
+                        </p>
+                    </md-card-content>
+                </div>
+            </md-card>
+        </div>
+    </section>
+</div>
