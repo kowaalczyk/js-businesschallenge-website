@@ -9,4 +9,5 @@ I had to stick to the deadline (otherwise entire competition would not take plac
 3. Front end has plenty of quick fixes - the priority was to fix every bug asap, so I didn't have enough time to learn how to do everything properly in angular - most of the fixes were made directly in hsbc.css. I was already used to working with bare css, and it was a natural way to go.
 
 Note that this was created in december 2016, based only on knowledge from tutorials, stackoverflow and trial-and-error. During my studies I will hopefully learn how to properly write a web app and this code will look like a joke, but for now I am just happy it does the job.
+
 Feel free to let me know if You have any tips/suggestions!
